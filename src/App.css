@@ -1,10 +1,39 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+body {
+  font-family : 'Nanum Myeongjo';
+  backgroud:black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  width : 80%;
+  margin : 0 auto;
+  background: white;
+}
+.intro{
+  padding : 8rem 0 8rem 0;
+  justify-content: center;
+  font-family : 'Nanum Myeongjo';
+}
+.greeting{
+  margin : 0 auto;
+  padding : 5rem 0 0rem 0;
+  justify-content: center;
+}
+.greetingContent{
+  width: 79%;
+  margin : 0 auto;
+  padding: 8rem 0 0 0;
+  justify-content: center;
+}
+.gallery{
+  margin : 0 auto;
+  padding : 8rem 0 0rem 0;
+  justify-content: center;
+}
+.location{
+  margin : 0 auto;
+  padding : 8rem 0 5rem 0;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +64,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media all and (min-width:720px) {
+  html, body{max-width:720px; margin:0 auto;}
 }
